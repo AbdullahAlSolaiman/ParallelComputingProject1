@@ -1,4 +1,4 @@
-# ParallelComputingProject1
+# Parallel Computing Project
 A Project done using OpenMP and MPI parallel computing libraries to return the coordinates of multiple rectangles hidden in an extremely large matrix of data.
 ## 1. Compiling and Executing the Program
 
