@@ -8,8 +8,10 @@ At first, the source code file and the “exam-data.txt” must be in the same f
 
 
 
-```mpic++ -fopenmp AbdullahAlSolaiman_AlternativeAssesment.cpp -o myprogram
-mpirun -np 4 myprogram  #np means number of processes,it could be changed ```
+```c++
+mpic++ -fopenmp AbdullahAlSolaiman_AlternativeAssesment.cpp -o myprogram
+mpirun -np 4 myprogram  #np means number of processes,it could be changed
+```
 
 
 
