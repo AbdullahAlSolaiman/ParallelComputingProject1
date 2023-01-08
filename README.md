@@ -8,8 +8,8 @@ At first, the source code file and the “exam-data.txt” must be in the same f
 
 
 
-mpic++ -fopenmp AbdullahAlSolaiman_AlternativeAssesment.cpp -o myprogram
-mpirun -np 4 myprogram    #np means number of processes,it could be changed 
+```mpic++ -fopenmp AbdullahAlSolaiman_AlternativeAssesment.cpp -o myprogram
+mpirun -np 4 myprogram  #np means number of processes,it could be changed ```
 
 
 
@@ -34,7 +34,7 @@ void fileRead(char* fName, int* rowsNumber,int* columnsNumber, int*** twoDMatrix
 The FullMatrixFromFile and twoDMatrix are pointers to int arrays declared in main function, when the function fileRead() is called, it gets the file name passed to it, and the addresses of these arrays. 
 At first, the matrix will be read into twoDMatrix which is dynamically allocated, then it will be mapped into fullMatrixFromFile array.
 
-Then, chunkSize will be calculated, which means the size of data each slave process will take, then the fukkMatrixFromFile will be scattered(distributed/decomposed) on the slave processe and each process will pefrom the necessary computation on its part of the domain only.
+Then, chunkSize will be calculated, which means the size of data each slave process will take, then the fullMatrixFromFile will be scattered(distributed/decomposed) on the slave processe and each process will pefrom the necessary computation on its part of the domain only.
 ```c++
     chunkSize = numRows/procsNumber;
     rowsePerProcess = numRows/procsNumber;
